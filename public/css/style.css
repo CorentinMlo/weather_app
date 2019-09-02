@@ -1,7 +1,7 @@
 body {
     color: #333333;
     font-family: Arial;
-    max-width: 650px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 16px;
 
@@ -35,6 +35,22 @@ header a {
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
+}
+
+.main-content a.linkSite {
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background: #888888;
+    color: white;
+    padding: 8px;
+    transition: 0.3s
+}
+
+.main-content a.linkSite:hover {
+    border: 1px solid #cccccc;
+    background: white;
+    color: #888888;
 }
 
 .portrait {
