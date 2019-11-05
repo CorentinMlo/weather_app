@@ -1,14 +1,3 @@
-// console.log('Client side javascript is loaded');
-
-// fetch('http://puzzle.mead.io/puzzle').then((response) => {
-// console.log(response);
-    
-// response.json().then((data) => {
-//         console.log(data);
-        
-//     })
-// });
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const messageOne = document.querySelector('#message-1');
@@ -32,9 +21,10 @@ weatherForm.addEventListener('submit', (e) => {
                 messageTwo.textContent = '';
                 
             } else {
-                messageOne.textContent = data.location;
-                //messageTwo.textContent = data.forecast;
+                console.log(data.forecast);
                 
+
+                messageOne.textContent = data.location;           
                 messageTwo.innerHTML = `<ul><li><span class="listHeader">Sumary</span> : ${data.forecast.daily.data[0].summary}</li>
                     <li><span class="listHeader">Temperature</span> : ${data.forecast.currently.temperature} °C</li>
                     <li><span class="listHeader">Precipitation probability</span> : ${data.forecast.currently.precipProbability * 100} %</li>
