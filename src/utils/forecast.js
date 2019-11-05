@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error){
             callback(body.error, undefined);
         } else {
-            callback(undefined, body.daily.data[0].summary + ' Il fait actuellement ' + body.currently.temperature + '°C. Il y a ' + body.currently.precipProbability + '% de chance de précipitation. \n La vitesse du vent est de ' + body.currently.windSpeed + ' m/s, le ciel est recouvert à ' +  body.currently.cloudCover*100 + '% et l\'indice UV est de ' + body.currently.uvIndex + '.');
+            callback(undefined, body.daily.data[0].summary + ' Il fait actuellement ' + body.currently.temperature + '°C. Il y a ' + body.currently.precipProbability * 100 + '% de chance de précipitation. \n La vitesse du vent est de ' + body.currently.windSpeed + ' m/s, le ciel est recouvert à ' +  body.currently.cloudCover*100 + '% et l\'indice UV est de ' + body.currently.uvIndex + '.');
         }
     })
 }
