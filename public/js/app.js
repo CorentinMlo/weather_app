@@ -21,8 +21,10 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const location = search.value;
 
-    messageOne.textContent = "Loading ..."
+    search.value = ''
 
+    messageOne.textContent = "Loading for " + location + " ..."
+ 
     fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
@@ -31,7 +33,15 @@ weatherForm.addEventListener('submit', (e) => {
                 
             } else {
                 messageOne.textContent = data.location;
-                messageTwo.textContent = data.forecast;
+                //messageTwo.textContent = data.forecast;
+                
+                messageTwo.innerHTML = `<ul><li><span class="listHeader">Sumary</span> : ${data.forecast.daily.data[0].summary}</li>
+                    <li><span class="listHeader">Temperature</span> : ${data.forecast.currently.temperature} °C</li>
+                    <li><span class="listHeader">Precipitation probability</span> : ${data.forecast.currently.precipProbability * 100} %</li>
+                    <li><span class="listHeader">Wind speed</span> : ${data.forecast.currently.windSpeed} m/s</li>
+                    <li><span class="listHeader">Cloud cover</span> : ${data.forecast.currently.cloudCover * 100} %</li>
+                    <li><span class="listHeader">Uv index</span> : ${data.forecast.currently.uvIndex}</li>
+                </ul></br> > you will find all the information and forecasts for the coming days <a class="linkToApi" target="_blank" href="https://darksky.net/forecast/${data.forecast.latitude},${data.forecast.longitude}/ca12/en">here</a>`
             }
         })
     })

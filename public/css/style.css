@@ -37,6 +37,10 @@ header a {
     text-decoration: none;
 }
 
+.linkToApi a {
+    text-decoration: none;
+}
+
 .main-content a.linkSite {
     text-decoration: none;
     cursor: pointer;
@@ -51,6 +55,10 @@ header a {
     border: 1px solid #cccccc;
     background: white;
     color: #888888;
+}
+
+.listHeader {
+    color: lightseagreen
 }
 
 .portrait {
