@@ -39,4 +39,4 @@ create `.env` file with
 
 ## NOTES
 
-...
+ node version - @12.8.0
