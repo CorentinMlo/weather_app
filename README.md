@@ -32,7 +32,7 @@ create `.env` file with
 ```MAPBOX_API_TOKEN```
 ```DARKSKY_API_KEY``` on the root directory
 
-> npm init <br>
+> npm install <br>
 
 > npm run start / dev <br>
 
