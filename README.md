@@ -1,27 +1,27 @@
 # weather_app
 
-<h2> INTRODUCTION </h2>
+## INTRODUCTION 
 
 This application is only intended to be a small personal project to work on nodeJs, using different APIs as well as Git.
 
 an online deployed version is available here -> https://falhuor-weather-app.herokuapp.com/
 
 
-<h2> DEPENDENCIES </h2>
+## DEPENDENCIES 
 
-<h4>Npm module</h4>
+### Npm module
 
 - express : https://www.npmjs.com/package/express 
 - hbs : https://www.npmjs.com/package/hbs 
 - request : https://www.npmjs.com/package/request 
 - dotenv : https://www.npmjs.com/package/dotenv
 
-for dev mode only
+#### for dev mode only
 
 - nodemon : https://www.npmjs.com/package/nodemon
 
 
-<h2> QUICK START </h2>
+## QUICK START
 
 clone / download this project from gitHub<br>
 
@@ -37,6 +37,6 @@ create `.env` file with
 > npm run start / dev <br>
 
 
-<h2> NOTES </h2>
+## NOTES
 
 ...
