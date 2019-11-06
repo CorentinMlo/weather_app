@@ -23,14 +23,16 @@ This application is only intended to be a small personal project to work on node
 
 ## QUICK START
 
-clone / download this project from gitHub<br>
+- clone / download this project from gitHub<br>
 
-create an account on [MapBox](https://www.mapbox.com/) and get the API token back.
+- create an account on [MapBox](https://www.mapbox.com/) and get the API token back.
 Same for [DarkSky](https://darksky.net/dev) with the secret KEY
 
-create `.env` file with 
+- create `.env` file with 
 ```MAPBOX_API_TOKEN```
 ```DARKSKY_API_KEY``` on the root directory
+
+- run :
 
 > npm install <br>
 
